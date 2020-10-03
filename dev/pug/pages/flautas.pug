@@ -1,0 +1,8 @@
+extends ../templates/template-dishes
+include ../mixins/platos
+block append config
+    - page = flautas.name
+    - metadescripcion = flautas.descripcion
+block content
+    .dishessecond
+        +dishes(flautas,sponsor[numSponsor])

@@ -1,9 +1,12 @@
-$colorprimario: #000; // TODO: * Modificar color primario
-$colorsecundario: #fff; // TODO: * Modificar color secundario
-$color-f: $colorsecundario;
-$color-t: $colorprimario;
-$color-titulo: $colorprimario;
+$colorprimario: rgb(76,62,46); // TODO: * Modificar color primario
+$colorsecundario: rgb(255,0,0); // TODO: * Modificar color secundario
+$color-amarillo:rgb(255,235,0);
+$color-f: $color-amarillo;
+$color-t: $colorsecundario;
+$color-p: $colorprimario;
 $fondo-l: "media/fondo-long.jpg"; // TODO: * Modificar fondo de pantalla
 $fondo-m: "media/fondo-medium.jpg";
 $fondo-s: "media/fondo-small.jpg"; // TODO: * Modificar fondo de pantalla
-$font: "fonts/p.t.barnumregular.ttf";
+$font: "fonts/PistolGripPump.ttf";
+$font-t: "fonts/SOUTNB.ttf";
+$font-t-b: "fonts/SOUTNK.ttf";

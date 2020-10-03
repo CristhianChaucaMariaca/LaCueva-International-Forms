@@ -1,0 +1,10 @@
+.puntas{
+    display: block;
+    &__img{
+        display: block;
+    }
+    &__img--rotado{
+        display: block;
+        transform:rotateX(180deg);
+    }
+}

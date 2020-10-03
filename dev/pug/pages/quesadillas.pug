@@ -1,0 +1,8 @@
+extends ../templates/template-dishes
+include ../mixins/platos
+block append config
+    - page = quesadillas.name
+    - metadescripcion = quesadillas.descripcion
+block content
+    .dishessecond
+        +dishes(quesadillas,sponsor[numSponsor])

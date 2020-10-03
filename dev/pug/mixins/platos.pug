@@ -8,4 +8,32 @@ mixin platos(platos,category)
             if(platos.price_uno)
                 span.dishes__price Bs&nbsp;#{platos.price_uno} 
             if(platos.price_dos)
-                span.dishes__price &nbsp;-&nbsp;#{platos.price_dos}
+                span.dishes__price -&nbsp;#{platos.price_dos}
+
+mixin dishes(platos,sponsor)
+    .dishessecond__body-second
+        .dishessecond__contenedor-arte
+            picture.dishessecond__picture
+                img.dishessecond__arte(src="media/"+platos.img.picture+platos.img.extention, alt="")
+                img.dishessecond__logo(src="media/"+logo.img+logo.extention, alt=logo.alt)
+        .dishessecond__body
+            .dishessecond__title
+                h2.dishessecond__title-text !{platos.name}
+            article.dishessecond__description
+                p.dishessecond__contenido !{platos.descripcion}
+            table.table
+                thead.table__header
+                    tr.table__row
+                        th.table__head.table__first &nbsp;
+                        th.table__head.table__price M
+                        th.table__head.table__price G
+                tbody.table__body
+                    each item in platos.platos
+                        tr.table__row
+                            td.table__column.table__first !{item.name}
+                            td.table__column.table__price.table__column--right !{item.priceuno}
+                            td.table__column.table__price.table__column--right !{item.pricedos}
+            .sponsors
+                    .sponsors__body
+                        include sponsor
+                        +sponsor(sponsor)

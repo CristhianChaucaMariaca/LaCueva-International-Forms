@@ -1,9 +1,23 @@
 @font-face{
-    font-family: "font1";
+    font-family: "font-titulo";
     src: url($font) format('truetype');
 }
-$font:"font1";
+@font-face{
+    font-family: "font-parrafo";
+    src: url($font-t) format('truetype');
+}
+@font-face{
+    font-family: "font-parrafo-bold";
+    src: url($font-t-b) format('truetype');
+}
+$font-t:"font-titulo";
+$font-p:"font-parrafo";
+$font-p-b:"font-parrafo-bold";
 body{
-    font-family: $font;
+    font-family: $font-p;
     font-size: 12pt;
+}
+@mixin titulo {
+    font-family: $font-t;
+    color:$color-t;
 }

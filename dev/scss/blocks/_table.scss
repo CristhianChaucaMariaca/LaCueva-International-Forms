@@ -1,0 +1,19 @@
+.table{
+    font-size: 1.3em;
+    width: 100%;
+    margin: 0 auto;
+    color:$color-p;
+    &__header{
+        text-align: right;
+    }
+    &__column{
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    &__column--right{
+        text-align: right;
+    }
+    &__price{
+        width: 15%;
+    }
+}

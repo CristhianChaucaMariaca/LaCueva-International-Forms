@@ -2,21 +2,28 @@
   flex-grow: 1;
 }
 .headerdishes {
-  font-size: 1.1em;
-  background-color: $colorprimario;
+  font-family: $font-t;
+  font-size: 1.3em;
   color: $colorsecundario;
-  padding-bottom: 3px;
-  padding-top: 3px;
   text-transform: uppercase;
-  margin-bottom: 30px;
   position: relative;
+  text-align: center;
+  &__text{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color:$colorprimario;
+  }
 }
+
 .dishes {
   display: grid;
   grid-template-columns: repeat(4, minmax(190px, 1fr));
   grid-column-gap: 40px;
   grid-row-gap: 30px;
-  margin-bottom: 70px;
+  width: 80%;
+  margin:0 auto;
+  margin-top: 30px;
+  margin-bottom: 50px;
   &__link {
     text-decoration: none;
     width: 100%;
@@ -41,10 +48,61 @@
     width: 100%;
     display: block;
   }
+  &__price{
+    font-size: 1.1em;
+  }
   &__name {
+    font-family: $font-p-b;
+    text-transform: uppercase;
     text-align: center;
-    font-size: 1.3em;
+    font-size: 1em;
     color: $colorprimario;
     justify-content: center;
+    margin-top: 5px;
+  }
+}
+.dishessecond{
+  font-size: 16px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  width: 100%;
+  &__body-second{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+    margin:0 auto;
+  }
+  &__description{
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    font-size: 1.3em;
+    color:$color-p;
+  }
+  &__title{
+    @include titulo;
+    text-align: center;
+    font-size: 1.8em;
+  }
+  &__contenedor-arte{
+    width: 100%;
+  }
+  &__picture{
+    display: block;
+    width: 100%;
+    position: relative;
+    margin-bottom: 60px;
+  }
+  &__arte{
+    width: 100%;
+    display: block;
+  }
+  &__logo{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 150px;
+    transform:translateY(50%);
   }
 }

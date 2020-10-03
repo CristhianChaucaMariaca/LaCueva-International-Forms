@@ -9,23 +9,35 @@
     width: 90%;
   }
   .headerdishes {
-    margin-bottom: 15px;
+    font-size: 1.2em;
+  }
+  .line{
+    width: 70%;
   }
   .dishes {
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 15px;
     grid-row-gap: 12px;
     font-size: 14px;
+    margin-top: 20px;
+    margin-bottom: 20px;
     &__text {
       text-align: center;
-      line-height: 0.92em;
     }
     &__name {
     }
   }
+  .dishessecond{
+    font-size: 14px;
+    &__body-second{
+      width: 100%;
+    }
+    &__body{
+      width: 80%;
+      margin:0 auto;
+    }
+  }
   .plate {
-    margin-top: 20px;
-    margin-bottom: 20px;
     font-size: 16px;
     &__img {
       width: 100%;
@@ -39,15 +51,13 @@
       width: 140px;
     }
     &__title {
-      font-size: 2em;
+      font-size: 1.5em;
       line-height: 1.1em;
       margin-bottom: 14px;
     }
     &__price {
-      font-size: 1.6em;
     }
     &__text {
-      font-size: 1.3em;
       margin-top: 14px;
     }
   }
@@ -64,13 +74,23 @@
   }
   .menu {
     &__nav {
-      grid-template-columns: repeat(2, 1fr);
-      grid-row-gap: 15px;
-      grid-column-gap: 23px;
+      margin: 0 auto;
+      width: 90%;
+
     }
     &__item {
       width: 140px;
-      font-size: 1em;
+      font-size: 1.3em;
+      &:nth-child(odd)
+      {
+        margin-left: 0px;
+        margin-right: 10px;
+      }
+      &:nth-child(even)
+      {
+        margin-right: 0px;
+        margin-left: 10px;
+      }
     }
   }
   .btn {

@@ -1,0 +1,21 @@
+.line{
+    width: 60%;
+    margin: 0 auto;
+    height: 3px;
+    display: flex;
+    justify-content: stretch;
+    &__item{
+        height: 100%;
+        flex-grow: 1;
+    }
+    &--left{
+        background-color: #2E8A36;
+    }
+    &--center{
+        background-color: white;
+
+    }
+    &--right{
+        background-color: #D70D10;
+    }
+}

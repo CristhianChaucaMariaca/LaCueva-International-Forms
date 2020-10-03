@@ -1,0 +1,17 @@
+extends ../templates/template-dishes
+include ../mixins/platos
+block append config
+    // TODO: * Modificar nombre de Objeto
+    - page = otros.name
+    // TODO: * Modificar nombre de Objeto
+    - metadescripcion = otros.descripcion
+block header
+    .headerdishes
+        +header-dishes
+        include ../includes/header-dishes
+block content
+    include ../mixins/platos-body
+    // TODO: * Modificar nombre de Objeto
+    .container-dishes
+        .dishes
+            +platos-body(otros)

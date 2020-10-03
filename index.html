@@ -5,27 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="auth" content="Cristhian Chauca"/>
     <link rel="stylesheet" href="styles.css"/>
-    <title>Nombre Pagina</title>
+    <title>La Cueva Menú</title>
     <meta name="description" content=""/>
     <meta name="keywords" content=""/>
-    <meta name="theme-color" content="#3d2116"/>
+    <meta name="theme-color" content="rgb(76,62,46)"/>
     <link rel="icon" href="media/favicon.png" type="image/png"/>
   </head>
   <body>
     <div class="content-max">
       <header class="header">
         <picture>
-          <source class="header__img" media="(max-width: 480px)" srcset="media/header-small.png" alt="banner - header"/>
-          <source class="header__img" media="(max-width: 768px)" srcset="media/header-medium.png" alt="banner - header"/><img class="header__img" srcset="media/header-long.png" alt="banner - header"/>
+          <source class="header__img" media="(max-width: 480px)" srcset="media/header-small.jpg" alt="banner - header"/>
+          <source class="header__img" media="(max-width: 768px)" srcset="media/header-medium.jpg" alt="banner - header"/><img class="header__img" srcset="media/header-long.jpg" alt="banner - header"/>
         </picture>
-        <picture><img class="header__logo" src="media/logo.png" alt="Logo"/>
-          <source class="header__logo" media="(max-width: 480px)" srcset="media/logo-small.png" alt="Logo"/>
-          <source class="header__logo" media="(max-width: 768px)" srcset="media/logo-medium.png" alt="Logo"/>
+        <picture><img class="header__logo" src="media/logo.svg" alt="Logo"/>
+          <source class="header__logo" media="(max-width: 480px)" srcset="media/logo-small.svg" alt="Logo"/>
+          <source class="header__logo" media="(max-width: 768px)" srcset="media/logo-medium.svg" alt="Logo"/>
+        </picture>
+        <picture class="puntas">
+          <source media="(max-width: 480px)" srcset="media/puntas-small.png"/><img class="puntas__img" src="media/puntas-long.png" alt="" sizes="" srcset=""/>
         </picture>
       </header>
       <div class="menu">
         <div class="menu__body">
-          <nav class="menu__nav"><a class="menu__item" href="platos.html"><img class="menu__btn" src="media/boton.svg" alt=""/><span class="menu__text">Platos</span></a><a class="menu__item" href="bebidas.html"><img class="menu__btn" src="media/boton.svg" alt=""/><span class="menu__text">Bebidas</span></a>
+          <nav class="menu__nav"><a class="menu__item" href="combos.html"><img class="menu__btn" src="media/boton.svg" alt=""/><span class="menu__text">Combos</span></a><a class="menu__item" href="nachos.html"><img class="menu__btn" src="media/boton.svg" alt=""/><span class="menu__text">Nachos</span></a><a class="menu__item" href="chili.html"><img class="menu__btn" src="media/boton.svg" alt=""/><span class="menu__text">Chili</span></a><a class="menu__item" href="tacos.html"><img class="menu__btn" src="media/boton.svg" alt=""/><span class="menu__text">Tacos</span></a><a class="menu__item" href="quesadillas.html"><img class="menu__btn" src="media/boton.svg" alt=""/><span class="menu__text">Quesadillas</span></a><a class="menu__item" href="burritos.html"><img class="menu__btn" src="media/boton.svg" alt=""/><span class="menu__text">Burritos</span></a><a class="menu__item" href="fajitas.html"><img class="menu__btn" src="media/boton.svg" alt=""/><span class="menu__text">Fajitas</span></a><a class="menu__item" href="enchiladas.html"><img class="menu__btn" src="media/boton.svg" alt=""/><span class="menu__text">Enchiladas</span></a><a class="menu__item" href="flautas.html"><img class="menu__btn" src="media/boton.svg" alt=""/><span class="menu__text">Flautas</span></a><a class="menu__item" href="otros.html"><img class="menu__btn" src="media/boton.svg" alt=""/><span class="menu__text">Otros</span></a><a class="menu__item" href="bebidas.html"><img class="menu__btn" src="media/boton.svg" alt=""/><span class="menu__text">Bebidas</span></a>
           </nav>
         </div>
       </div>
@@ -34,5 +37,10 @@
       <div class="load"></div>
     </div>
     <script src="app.js"></script>
+    <footer class="footer">
+          <picture class="puntas">
+            <source class="puntas__img puntas__img--rotado" media="(max-width: 480px)" srcset="media/puntas-small.png"/><img class="puntas__img puntas__img--rotado" src="media/puntas-long.png" alt="footer"/>
+          </picture>
+    </footer>
   </body>
 </html>

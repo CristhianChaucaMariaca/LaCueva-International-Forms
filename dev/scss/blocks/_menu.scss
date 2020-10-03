@@ -3,7 +3,6 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-bottom: 50px;
     &__body{
         max-width: 800px;
         display: block;
@@ -16,31 +15,33 @@
         margin-bottom: 50px;
     }
     &__nav{
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-column-gap: 30px;
-        grid-row-gap: 30px;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: center;
     }
     
     &__item{
+        @include titulo;
         text-decoration: none;
         text-transform: uppercase;
         text-align: center;
         color:$colorsecundario;
         position: relative;
-        font-size: 1.3em;
+        font-size: 1.5em;
         width: 180px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 40px;
+        margin-left: 20px;
+        margin-right: 20px;
+        &:last-child{
+            margin-bottom: 0px;
+        }
         &:hover{
             transform: scale(1.05);
             transition:all .3s;
-        }
-        &:last-child{
-            grid-row-start: 3;
-            grid-column-end: 4;
-        }
-        &:nth-last-child(2){
-            grid-row-start: 3;
-            grid-column-end: 3;
         }
     }
     &__btn{
@@ -49,8 +50,5 @@
     &__text{
         position: absolute;
         z-index: 100;
-        bottom: 50%;
-        right: 50%;
-        transform: translateX(50%) translateY(45%);
     }
 }

@@ -1,19 +1,20 @@
 .content__plate {
   max-width: 100vw;
-  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-grow: 1;
 }
 .plate {
   width: 420px;
-  // margin-top: 50px;
+  margin-top: 30px;
+  margin-bottom: 30px;
   &__logo {
     position: absolute;
-    right: 15px;
-    top: 0;
-    transform: translateY(-40%);
-    width: 130px;
+    left: 10px;
+    bottom: 0;
+    transform: translateY(50%);
+    width: 120px;
     z-index: 100;
   }
   &__img {
@@ -24,6 +25,7 @@
       // TODO: REVISAR ESTA ETIQUETA PARA NO CAUSAR CONFLICTO CON LAS CLASES
       max-width: 100%;
     }
+    margin-bottom: 50px;
   }
   &__cont__picture {
     overflow: hidden;
@@ -39,15 +41,21 @@
     padding-right: 30px;
   }
   &__title {
-    font-size: 1.6em;
     margin-top: 10px;
     margin-bottom: 7px;
     text-align: center;
     text-transform: uppercase;
+    font-family: $font-t;
+    color:$colorsecundario;
+    span{
+      font-family: $font-p;
+    }
   }
   &__price {
     text-align: center;
-    font-size: 1.1em;
+    font-size: 1.6em;
+    font-family: $font-p;
+    margin-top: 20px;
   }
   &__text {
     font-size: 1.1em;

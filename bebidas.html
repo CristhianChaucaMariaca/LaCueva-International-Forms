@@ -5,17 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="auth" content="Cristhian Chauca"/>
     <link rel="stylesheet" href="styles.css"/>
-    <title>Nombre Bebidas</title>
+    <title>La Cueva Bebidas</title>
     <meta name="description" content=""/>
     <meta name="keywords" content=""/>
-    <meta name="theme-color" content="#3d2116"/>
+    <meta name="theme-color" content="rgb(76,62,46)"/>
     <link rel="icon" href="media/favicon.png" type="image/png"/>
   </head>
   <body>
     <div class="headerdishes">
-      <div class="container">
-        <h3 class="headerdishes__text">Bebidas</h3>
-      </div>
+      <picture class="puntas">
+        <source class="puntas__img" media="(max-width: 480px)" srcset="media/puntas-small.png"/><img class="puntas__img" src="media/puntas-long.png" alt="footer"/>
+      </picture>
     </div>
     <div class="container">
       <div class="lists">
@@ -186,5 +186,10 @@
       <div class="load"></div>
     </div>
     <script src="app.js"></script>
+    <footer class="footer">
+          <picture class="puntas">
+            <source class="puntas__img puntas__img--rotado" media="(max-width: 480px)" srcset="media/puntas-small.png"/><img class="puntas__img puntas__img--rotado" src="media/puntas-long.png" alt="footer"/>
+          </picture>
+    </footer>
   </body>
 </html>

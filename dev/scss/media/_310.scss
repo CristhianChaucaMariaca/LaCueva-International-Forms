@@ -1,7 +1,13 @@
-@media screen and(max-width:320px) {
+@media screen and(max-width:360px) {
   .dishes {
+    width: 90%;
     &__text {
       font-size: 1.2em;
+    }
+  }
+  .dishessecond{
+    &__body{
+      width: 90%;
     }
   }
   .menu {

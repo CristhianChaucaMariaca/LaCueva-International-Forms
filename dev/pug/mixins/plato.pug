@@ -10,12 +10,12 @@ mixin plato(plato,sponsor,category)
             .container
                 .plate__body
                     h2.plate__title !{plato.text}
+                    if(plato.description)
+                        p.plate__text !{plato.description}
                     if(plato.price_uno)
                         p.plate__price Bs&nbsp;!{plato.price_uno}
                     if(plato.price_dos)
                         p.plate__price Bs&nbsp;!{plato.price_dos}
-                    if(plato.description)
-                        p.plate__text !{plato.description}
             .sponsors
                 .sponsors__body
                     include sponsor
