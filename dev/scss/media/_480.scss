@@ -29,6 +29,10 @@
   }
   .dishessecond{
     font-size: 14px;
+    margin-bottom: 5px;
+    &__picture{
+      margin-bottom: 45px;
+    }
     &__body-second{
       width: 100%;
     }
@@ -62,6 +66,9 @@
     }
   }
   .sponsors {
+    &__content{
+      margin-top: 60px;
+    }
     &__body {
       flex-direction: column;
     }
@@ -81,6 +88,7 @@
     &__item {
       width: 140px;
       font-size: 1.3em;
+      margin-bottom: 20px;
       &:nth-child(odd)
       {
         margin-left: 0px;
@@ -97,7 +105,6 @@
     width: 80px;
   }
   .lists {
-    font-size: 0.9em;
     &__content {
       width: 85%;
       margin: 0 auto;

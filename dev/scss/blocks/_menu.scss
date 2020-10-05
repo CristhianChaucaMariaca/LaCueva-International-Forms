@@ -36,9 +36,6 @@
         margin-bottom: 40px;
         margin-left: 20px;
         margin-right: 20px;
-        &:last-child{
-            margin-bottom: 0px;
-        }
         &:hover{
             transform: scale(1.05);
             transition:all .3s;
@@ -50,5 +47,6 @@
     &__text{
         position: absolute;
         z-index: 100;
+        transform: translateY(-10%);
     }
 }
