@@ -256,7 +256,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 40%;
+  width: 30%;
   margin: 0 auto;
 }
 .dishessecond__description {
@@ -620,6 +620,11 @@ body {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+@media screen and (max-width: 1100px) {
+  .dishessecond__body-second {
+    width: 40%;
+  }
+}
 @media screen and (max-device-width: 768px) {
   .container {
     width: 90%;
@@ -656,10 +661,18 @@ body {
     right: 30px;
     width: 90px;
   }
+
+  .dishessecond__body-second {
+    width: 50%;
+  }
 }
 @media (max-width: 650px) {
   .dishes {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .dishessecond__body-second {
+    width: 60%;
   }
 }
 @media screen and (max-width: 480px) {

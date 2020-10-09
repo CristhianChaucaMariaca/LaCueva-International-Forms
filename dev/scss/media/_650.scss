@@ -3,4 +3,10 @@
     .dishes{
         grid-template-columns: repeat(2,1fr);
     }
+
+    .dishessecond{
+        &__body-second{
+            width: 60%;
+        }
+    }
 }
