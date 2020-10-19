@@ -251,6 +251,9 @@ body {
   margin-top: 40px;
   margin-bottom: 40px;
   width: 100%;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
 }
 .dishessecond__body-second {
   display: flex;
@@ -507,7 +510,7 @@ body {
 .sponsors__content {
   width: 60px;
   align-self: start;
-  margin-top: 70px;
+  margin-top: 10px;
   align-self: center;
   margin-left: 10px;
   margin-right: 10px;
@@ -743,10 +746,19 @@ body {
   }
 
   .sponsors__content {
-    margin-top: 60px;
+    width: 50px;
   }
-  .sponsors__body {
-    flex-direction: column;
+
+  #Pacenia {
+    width: 85px;
+  }
+
+  #huari {
+    width: 85px;
+  }
+
+  #Guarana {
+    width: 60px;
   }
 
   .header {

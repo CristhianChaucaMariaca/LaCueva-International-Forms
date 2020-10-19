@@ -67,11 +67,17 @@
   }
   .sponsors {
     &__content{
-      margin-top: 60px;
+      width: 50px;
     }
-    &__body {
-      flex-direction: column;
-    }
+  }
+  #Pacenia {
+    width: 85px;
+  }
+  #huari {
+    width: 85px;
+  }
+  #Guarana {
+    width: 60px;
   }
   .header {
     &__logo {
